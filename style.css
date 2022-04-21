@@ -1,15 +1,13 @@
- html {
+html {
   font-family: 'Roboto', sans-serif;
-    
- }
- body {
+}
+
+body {
   display: flex;
   flex-direction: column;
   background-image: url(imgs/header-shapes\ mobile.png);
   background-repeat: no-repeat;
-    
- }
-
+}
 
 .container {
   margin: 10px;
@@ -19,14 +17,10 @@
 
 .img {
   list-style: none;
- 
-
 }
 
 .introduction {
   font-size: 0.5cm;
-    
-    
 }
 
 .body-main {
@@ -35,6 +29,7 @@
   width: 20%;
   align-content: center;
 }
+
 .navbar {
   display: flex;
   align-items: flex-start;
@@ -42,8 +37,7 @@
   padding-bottom: 200px;
 }
 
-
-.connect .contact{
+.connect .contact {
   display: flex;
   list-style: none;
 }
