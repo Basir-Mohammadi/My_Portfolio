@@ -1,47 +1,45 @@
  html {
-    
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
     
  }
  body {
-     display: flex;
-     flex-direction: column;
-     background-image: url(imgs/header-shapes\ mobile.png);
-     background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-image: url(imgs/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
     
  }
 
 
 .container {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .img {
-   list-style: none;
+  list-style: none;
  
 
 }
 
-
 .introduction {
-    font-size: 0.5cm;
+  font-size: 0.5cm;
     
     
 }
 
 .body-main {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-content: center;
 }
 .navbar {
-    display: flex;
-    align-items: flex-start;
-    list-style: none;
-    padding-bottom: 200px;
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  padding-bottom: 200px;
 }
 
 
