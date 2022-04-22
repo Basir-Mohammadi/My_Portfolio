@@ -11,29 +11,38 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 8%;
+  margin: 7%;
+  margin-bottom: 0;
 }
 
 .container {
-  margin-top: 0;
+  margin: 0;
   background-image: url('imgs/header-shapes-mobile.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
 .introduction {
   font-size: 25px;
+  width: 65%;
+  color: rgb(43, 40, 40);
 }
 
 .body-main {
   width: 75%;
   padding: 10%;
-  margin-top: 128px;
+  margin-top: 40px;
+}
+.content {
+  margin-top: 15px;
+  /* text-align: justify; */
 }
 
 .connect {
   padding-left: 60px;
   padding-bottom: 15px;
+  color: rgb(41, 224, 224);
 }
 
 ul {
