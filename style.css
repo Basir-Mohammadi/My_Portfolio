@@ -1,38 +1,38 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 8%;
 }
 
-  .container {
-    margin-top: 0;
-    background-image: url('imgs/header-shapes-mobile.png');
-    background-repeat: no-repeat;
-    height:100%;
-     
-  }
+.container {
+  margin-top: 0;
+  background-image: url('imgs/header-shapes-mobile.png');
+  background-repeat: no-repeat;
+  height: 100%;
+}
 
-.body-main{
+.body-main {
   width: 75%;
   padding: 10%;
   margin-top: 170px;
 }
- 
+
 .connect {
   padding-left: 60px;
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 
-ul{
+ul {
   display: flex;
   gap: 5%;
   padding-left: 60px;
