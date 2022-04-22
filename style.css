@@ -21,10 +21,14 @@ nav {
   height: 100%;
 }
 
+.introduction {
+  font-size: 25px;
+}
+
 .body-main {
   width: 75%;
   padding: 10%;
-  margin-top: 170px;
+  margin-top: 128px;
 }
 
 .connect {
