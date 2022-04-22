@@ -1,43 +1,41 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-image: url(imgs/header-shapes\ mobile.png);
-  background-repeat: no-repeat;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  margin: 10px;
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8%;
 }
 
-.img {
+  .container {
+    margin-top: 0;
+    background-image: url('imgs/header-shapes-mobile.png');
+    background-repeat: no-repeat;
+    height:100%;
+     
+  }
+
+.body-main{
+  width: 75%;
+  padding: 10%;
+  margin-top: 170px;
+}
+ 
+.connect {
+  padding-left: 60px;
+  padding-bottom: 15px; 
+}
+
+ul{
+  display: flex;
+  gap: 5%;
+  padding-left: 60px;
   list-style: none;
-}
-
-.introduction {
-  font-size: 0.5cm;
-}
-
-.body-main {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  align-content: center;
-}
-
-.navbar {
-  display: flex;
-  align-items: flex-start;
-  list-style: none;
-  padding-bottom: 200px;
-}
-
-.connect .contact {
-  display: flex;
-  list-style: none;
+  flex-direction: row;
 }
