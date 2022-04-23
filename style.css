@@ -16,6 +16,7 @@ nav {
 }
 
 .container {
+  display: grid;
   margin: 0;
   background-image: url('imgs/header-shapes-mobile.png');
   background-repeat: no-repeat;
@@ -40,15 +41,95 @@ nav {
 }
 
 .connect {
-  padding-left: 60px;
+  padding-left: 40px;
   padding-bottom: 15px;
   color: rgb(41, 224, 224);
 }
 
-ul {
+.social-image {
   display: flex;
   gap: 5%;
-  padding-left: 60px;
+  padding-left: 40px;
   list-style: none;
   flex-direction: row;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5 {
+  margin-top: 115px;
+  outline: auto;
+  outline-style: round;
+  background-color: rgb(248, 247, 246);
+  height: 552px;
+  width: 330;
+  padding-left: 32px;
+  padding-top: 16px;
+  border-radius: 8px;
+}
+
+.tonic {
+  padding-bottom: 5%;
+}
+
+.dates {
+  display: flex;
+  gap: 5%;
+  padding-left: 7px;
+  padding-bottom: 25px;
+  list-style: none;
+  flex-direction: row;
+}
+
+.content-details {
+  padding-left: 7px;
+  font-size: 18px;
+  width: 79%;
+  padding-bottom: 19px;
+}
+
+.lists {
+  display: flex;
+  gap: 7%;
+  padding-left: 3px;
+  list-style: none;
+  flex-direction: row;
+}
+
+.button,
+.resum,
+.language {
+  border: 5px lightblue;
+  border-radius: 5px;
+  margin-top: 35px;
+  margin-left: 4px;
+  padding: 2%;
+  background-color: rgb(158, 202, 202);
+}
+
+.container-5 > .connect {
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.container-5 {
+  height: 790px;
+}
+
+.languages {
+  padding-left: 5px;
+  padding-right: 10px;
+  list-style-type: none;
+  background-color: rgb(229, 235, 235);
+}
+
+.fram-skill {
+  list-style-type: none;
+}
+
+.framework {
+  margin-top: 25px;
+  margin-bottom: 22px;
 }

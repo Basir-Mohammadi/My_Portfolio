@@ -2,7 +2,7 @@
 
 # My_Portfolio
 
-> This is the first basic protfolio project of Microverse.
+> This is my first portfolio project in microverse.
 
 
 ## Built With
@@ -39,9 +39,9 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 *Author1*
+👤 *Basir Mohammadi*
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@basirking](https://github.com/basirking)
 
 
 
