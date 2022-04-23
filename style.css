@@ -1,0 +1,54 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7%;
+  margin-bottom: 0;
+}
+
+.container {
+  margin: 0;
+  background-image: url('imgs/header-shapes-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.introduction {
+  font-size: 25px;
+  width: 65%;
+  color: rgb(43, 40, 40);
+}
+
+.body-main {
+  width: 75%;
+  padding: 10%;
+  margin-top: 40px;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.connect {
+  padding-left: 60px;
+  padding-bottom: 15px;
+  color: rgb(41, 224, 224);
+}
+
+ul {
+  display: flex;
+  gap: 5%;
+  padding-left: 60px;
+  list-style: none;
+  flex-direction: row;
+}
