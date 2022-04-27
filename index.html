@@ -447,10 +447,21 @@
         </section>
 
         <section class="container-6">
-          <div>
+          <div class="contact-img">
             <a href="#">
               <img src="imgs/contact-me.png" alt="contact-me">
             </a>
+            <a href="#">
+              <img class="text-img" src="imgs/contact-text.png" alt="contact-text">
+            </a>
+          </div>
+          <div class="forms">
+            <form action="#">
+              <input type="text" class="text1 fname" pattern=".{1,30}" name="firstname" placeholder="please write your name..." required>
+              <input type="email" class="text1 email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="write your email..." required>
+              <input type="text" class="text1 textarea" pattern=".{1,500}" name="text"  placeholder="write your message here.">
+              <input type="button" class="touchbtn" value=" Get It Touch">
+            </form>
           </div>
         </section>
         
