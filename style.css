@@ -181,8 +181,11 @@ input[type=text],
 }
 
 .textarea {
+  width: 87%;
   margin-top: 20px;
   height: 240px;
+  border-radius: 15px;
+  padding: 2px;
 }
 
 .touchbtn {
