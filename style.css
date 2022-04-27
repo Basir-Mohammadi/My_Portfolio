@@ -141,11 +141,9 @@ nav {
   justify-content: center;
   outline-style: round;
   position: relative;
-  margin-top: 115px;
-  border-top-left-radius:100px;
+  border-top-left-radius: 100px;
   background-color: rgba(96, 112, 255, 1);
 }
-
 
 .contact-img {
   display: flex;
@@ -160,7 +158,8 @@ nav {
   margin: 20px;
 }
 
-input[type=text], .email {
+input[type=text],
+.email {
   padding: 12px 165px;
   display: inline-block;
   border: 1px solid #ccc;
@@ -168,20 +167,25 @@ input[type=text], .email {
   box-sizing: border-box;
   padding-left: 20px;
 }
+
 .fname {
   margin-top: 350px;
   margin-bottom: 20px;
- }
-.fname, .email,.textarea {
+}
+
+.fname,
+.email,
+.textarea {
   margin-left: 25px;
   margin-right: 25px;
 }
- .textarea {
-   margin-top: 20px;
-   height: 240px;
-   
- }
- .touchbtn {
+
+textarea {
+  margin-top: 20px;
+  height: 240px;
+}
+
+.touchbtn {
   background-color: white;
   border: none;
   color: rgba(96, 112, 255, 1);
