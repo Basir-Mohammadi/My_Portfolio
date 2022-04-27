@@ -135,11 +135,67 @@ nav {
 }
 
 .container-6 {
-  height: 779px;
-  width: 375px;
-  left: 0px;
+  display: flex;
+  margin-top: 115px;
+  outline: auto;
+  justify-content: center;
+  outline-style: round;
+  position: relative;
   margin-top: 115px;
   border-top-left-radius:100px;
   background-color: rgba(96, 112, 255, 1);
 }
 
+
+.contact-img {
+  display: flex;
+  position: absolute;
+  margin-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-img {
+  margin: 20px;
+}
+
+input[type=text], .email {
+  padding: 12px 165px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.fname {
+  margin-top: 350px;
+  margin-bottom: 20px;
+ }
+.fname, .email,.textarea {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+ .textarea {
+   margin-top: 20px;
+   height: 240px;
+   /* padding-top: 0%;
+   vertical-align:text-top; */
+ }
+ .touchbtn {
+  background-color: white;
+  border: none;
+  color: rgba(96, 112, 255, 1);
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 25px 27px;
+  cursor: pointer;
+}
+
+.touchbtn:hover {
+  background-color: green;
+}
