@@ -179,8 +179,7 @@ input[type=text], .email {
  .textarea {
    margin-top: 20px;
    height: 240px;
-   /* padding-top: 0%;
-   vertical-align:text-top; */
+   
  }
  .touchbtn {
   background-color: white;
