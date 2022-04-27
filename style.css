@@ -133,3 +133,13 @@ nav {
   margin-top: 25px;
   margin-bottom: 22px;
 }
+
+.container-6 {
+  height: 779px;
+  width: 375px;
+  left: 0px;
+  margin-top: 115px;
+  border-top-left-radius:100px;
+  background-color: rgba(96, 112, 255, 1);
+}
+
