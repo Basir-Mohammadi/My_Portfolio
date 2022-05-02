@@ -90,13 +90,13 @@ nav {
   padding-bottom: 19px;
 }
 
-.lists {
+/* .lists {
   display: flex;
   gap: 7%;
   padding-left: 3px;
   list-style: none;
   flex-direction: row;
-}
+} */
 
 .button,
 .resum,
@@ -133,3 +133,8 @@ nav {
   margin-top: 25px;
   margin-bottom: 22px;
 }
+
+.html {
+  float: right;
+}
+
