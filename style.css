@@ -205,3 +205,10 @@ input[type=text],
 .touchbtn:hover {
   background-color: green;
 }
+
+.Ellipse {
+  display: flex;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 40px;
+}
