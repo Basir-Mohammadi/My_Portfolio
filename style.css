@@ -185,7 +185,8 @@ input[type=text],
   margin-top: 20px;
   height: 240px;
   border-radius: 15px;
-  padding: 2px;
+  padding-top: 4px;
+  padding-left: 6px;
 }
 
 .touchbtn {
