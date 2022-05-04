@@ -138,7 +138,9 @@ nav {
 .lists {
   display: inline;
   list-style: none;
-  float: right;
 }
 
 
+.left {
+  float: left;
+}
