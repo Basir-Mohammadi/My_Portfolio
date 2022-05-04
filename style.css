@@ -204,6 +204,7 @@ nav {
   display: flex;
   list-style-type: none;
 }
+
 .top {
   margin-top: 20px;
   margin-left: 20px;
@@ -215,7 +216,6 @@ nav {
 
 .text-img {
   margin: 20px;
-
 }
 
 input[type=text],
