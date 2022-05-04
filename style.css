@@ -154,6 +154,10 @@ nav {
   align-items: center;
 }
 
+.forms {
+  width: 100%;
+}
+
 .text-img {
   margin: 20px;
 }
@@ -168,9 +172,15 @@ input[type=text],
   padding-left: 20px;
 }
 
-.fname {
+.fname{
   margin-top: 350px;
   margin-bottom: 20px;
+  width: 320px;
+  padding-right: -20px;
+}
+
+.email {
+  width: 300px;
 }
 
 .fname,
