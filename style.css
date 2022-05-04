@@ -146,6 +146,7 @@ nav {
 }
 
 .contact-img {
+  margin-top: 90px;
   display: flex;
   position: absolute;
   flex-direction: column;
