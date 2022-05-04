@@ -434,13 +434,13 @@
             </p>
           </div>
           <div class="forms">
-            <form action="https://formspree.io/" method="post">
+            <form action="https://formspree.io/f/mnqwoyga" method="post">
 
-              <input type="text" class="text1 fname" pattern=".{1,30}"  name="firstname" placeholder="please write your name..." required>
+              <input type="text" class="text1 fname" maxlength="30"  name="firstname" placeholder="please write your name..." required>
 
               <input type="email" class="text1 email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="write your email..." required>
-              <textarea name="text" class="text1 textarea"  maxlength="500" placeholder="Please write your text here.." > </textarea>
-              <input type="button" class="touchbtn" value=" Get It Touch">
+              <textarea name="text" class="text1 textarea"  maxlength="500" placeholder="Please write your text here.." required > </textarea>
+              <input type="submit" class="touchbtn" value=" Get It Touch">
             </form>
           </div>
         </section>
