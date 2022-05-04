@@ -148,7 +148,6 @@ nav {
 .contact-img {
   display: flex;
   position: absolute;
-  margin-top: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -174,10 +173,9 @@ input[type=text],
   width: 392px;
 }
 
-.fname{
+.fname {
   margin-top: 350px;
   margin-bottom: 20px;
-  width: 320px;
   padding-right: -20px;
   width: 392px;
 }
