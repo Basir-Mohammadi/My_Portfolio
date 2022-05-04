@@ -152,7 +152,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 123px;
 }
 
 .forms {
@@ -171,19 +170,18 @@ input[type=text],
   border-radius: 12px;
   box-sizing: border-box;
   padding-left: 20px;
-  width: 392px;
+  width: 365px;
 }
 
-.fname{
+.fname {
   margin-top: 350px;
   margin-bottom: 20px;
-  width: 320px;
+  width: 300px;
   padding-right: -20px;
-  width: 392px;
 }
 
 .email {
-  width: 300px;
+  width: 365px;
 }
 
 .fname,
@@ -191,7 +189,6 @@ input[type=text],
 .textarea {
   margin-left: 25px;
   margin-right: 25px;
-  width: 393px;
 }
 
 .textarea {
