@@ -57,7 +57,6 @@ nav {
 .connect {
   padding-left: 55px;
   padding-bottom: 15px;
-  color: rgb(41, 224, 224);
 }
 
 .social-image ul {
@@ -290,7 +289,7 @@ input[type=text],
   margin-top: 40px;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 850px) {
   html {
     font-family: 'Roboto', sans-serif;
   }
@@ -321,6 +320,10 @@ input[type=text],
     width: 80%;
   }
 
+  .connect1 {
+    color: rgba(127, 140, 255, 1);
+  }
+  
   .social-image {
     width: 85%;
   }
