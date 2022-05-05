@@ -323,7 +323,7 @@ input[type=text],
   .connect1 {
     color: rgba(127, 140, 255, 1);
   }
-  
+
   .social-image {
     width: 85%;
   }
@@ -456,5 +456,25 @@ input[type=text],
 
   .touchbtn {
     margin-left: 115px;
+  }
+
+  .button,
+  .resum {
+    background: rgba(64, 83, 252, 1);
+  }
+
+  .button h4,
+  .resum h4 {
+    color: white;
+  }
+
+  .button,
+  .resum:hover {
+    background: rgb(11, 29, 199);
+    color: white;
+  }
+
+  .button, .resum:active {
+    background: rgb(102, 113, 206);
   }
 }
