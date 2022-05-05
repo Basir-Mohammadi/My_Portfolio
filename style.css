@@ -60,7 +60,7 @@ nav {
   color: rgb(41, 224, 224);
 }
 
-.social-image ul{
+.social-image ul {
   display: flex;
   gap: 5%;
   padding-left: 55px;
@@ -290,13 +290,11 @@ input[type=text],
   margin-top: 40px;
 }
 
-
-@media only screen and (min-width:650px){
-
+@media only screen and (min-width: 650px) {
   html {
     font-family: 'Roboto', sans-serif;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
@@ -311,7 +309,7 @@ input[type=text],
     background-color: white;
     border-bottom-left-radius: 70px;
   }
-  
+
   .body-main {
     display: flex;
     justify-content: center;
@@ -328,7 +326,7 @@ input[type=text],
   }
 
   .nav-bar {
-    margin: 0px 0px;
+    margin: 0 0;
     padding-top: 20px;
     background-color: white;
   }
@@ -341,6 +339,13 @@ input[type=text],
     transition: background-color 2s;
   }
 
+  .nav-links li {
+    margin: 0 10px;
+    color: black;
+    padding: 8px 15px;
+    font-size: 18px;
+  }
+
   .nav-links li:hover {
     background-color: rgb(52, 201, 168);
     border-radius: 20px;
@@ -349,16 +354,8 @@ input[type=text],
   .contact {
     border-radius: 30px;
     background-color: rgb(147, 185, 147);
-  
   }
 
-  .nav-links li {
-    margin: 0 10px;
-    color: black;
-    padding: 8px 15px;
-    font-size: 18px;
-  }
-  
   .logo {
     margin-left: 50px;
   }
@@ -377,7 +374,7 @@ input[type=text],
     height: 496px;
     width: 1156px;
     margin-left: 70px;
-    top: 0px;
+    top: 0;
     border-radius: 24px;
     padding-top: 50px;
     justify-content: center;
@@ -401,37 +398,37 @@ input[type=text],
     width: 50%;
   }
 
- .about > .connect {
-   margin-top: 40px;
-   width: 30%;
- }
+  .about > .connect {
+    margin-top: 40px;
+    width: 30%;
+  }
 
- .Pics {
-   width: 50%;
- }
+  .Pics {
+    width: 50%;
+  }
 
- .about > .last-details {
-   width: 50%;
- }
+  .about > .last-details {
+    width: 50%;
+  }
 
- .languages {
-   display: flex;
-   flex-direction: row;
-   padding: 50px;
- }
+  .languages {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+  }
 
- .lang-s {
-   display: flex;
-   flex-direction: column;
-   padding: 15px 30px 30px 5px;
- }
+  .lang-s {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 30px 5px;
+  }
 
   .contentright {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
-  
+
   .container-6 {
     display: flex;
     width: 100%;
@@ -457,5 +454,4 @@ input[type=text],
   .touchbtn {
     margin-left: 115px;
   }
-
 }
