@@ -384,6 +384,7 @@ input[type=text],
     display: flex;
     flex-direction: row;
     align-content: center;
+    border: 2px solid rgba(167, 174, 255, 1);
   }
 
   .container-2,
@@ -396,9 +397,8 @@ input[type=text],
     margin-top: 30px;
   }
 
-  .about,
-  .aboutme {
-    width: 50%;
+  .lists h6 {
+    color: rgba(96, 112, 255, 1);
   }
 
   .about > .connect {
@@ -411,13 +411,19 @@ input[type=text],
   }
 
   .about > .last-details {
-    width: 50%;
+    width: 85%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
   }
 
   .languages {
     display: flex;
     flex-direction: row;
     padding: 50px;
+  }
+
+  .language {
+    width: max-content;
   }
 
   .lang-s {
@@ -458,23 +464,39 @@ input[type=text],
     margin-left: 115px;
   }
 
+  .touchbtn:hover {
+    background: rgba(64, 83, 252, 1);
+  }
+
   .button,
-  .resum {
+  .resum,
+  .language {
     background: rgba(64, 83, 252, 1);
   }
 
   .button h4,
-  .resum h4 {
+  .resum h4,
+  .language h4 {
+    color: white;
+  }
+
+  .resum:hover {
+    background: rgb(21, 38, 194);
+    color: white;
+  }
+
+  .button:hover {
+    background: rgb(21, 38, 194);
+    color: white;
+  }
+
+  .language:hover {
+    background: rgb(21, 38, 194);
     color: white;
   }
 
   .button,
-  .resum:hover {
-    background: rgb(11, 29, 199);
-    color: white;
-  }
-
-  .button, .resum:active {
-    background: rgb(102, 113, 206);
+  .resum {
+    width: max-content;
   }
 }
