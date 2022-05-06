@@ -361,6 +361,7 @@ input[type=text],
     background-color: blue;
     outline: 2px solid;
     transform: rotate(50deg);
+    padding: 10px;
   }
 
   .logo:hover {
