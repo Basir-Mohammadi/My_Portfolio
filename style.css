@@ -1,5 +1,6 @@
 html {
   font-family: 'Roboto', sans-serif;
+  background-color: rgb(248, 247, 246);
 }
 
 * {
@@ -74,7 +75,7 @@ nav {
 .container-5 {
   margin-top: 100px;
   outline-style: round;
-  background-color: rgb(248, 247, 246);
+  background-color: white;
   height: 552px;
   width: 330;
   padding-left: 32px;
@@ -126,13 +127,10 @@ nav {
 
 .button,
 .resum {
-  border: 5px lightblue;
   border-radius: 5px;
   margin-top: 31px;
-  color: rgba(57, 109, 242, 1);
   margin-left: 4px;
   padding: 2%;
-  background-color: rgb(158, 202, 202);
 }
 
 .button,
@@ -185,7 +183,7 @@ nav {
 
 .framework {
   margin-top: 30px;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
 .container-6 {
@@ -215,11 +213,6 @@ nav {
   margin-top: 20px;
   display: flex;
   list-style-type: none;
-}
-
-.top {
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 .forms {
@@ -444,7 +437,7 @@ input[type=text],
   .lang-s {
     display: flex;
     flex-direction: column;
-    padding: 15px 15px 25px 5px;
+    padding: 0 30px 20px 0;
   }
 
   .contentright {
@@ -486,22 +479,30 @@ input[type=text],
 
   .button,
   .resum {
-    background: rgba(64, 83, 252, 1);
+    border: 2px solid blue;
     width: max-content;
   }
 
   .button h4,
   .resum h4 {
-    color: white;
+    color: blue;
   }
 
   .resum:hover {
     background: rgb(21, 38, 194);
-    color: white;
+    color: whitesmoke;
   }
 
   .button:hover {
     background: rgb(21, 38, 194);
-    color: white;
+    color: whitesmoke;
   }
+
+  .line {
+    width:100%;
+    margin-bottom: 30px;
+    height:1px; 
+    background: rgb(206, 203, 203) 
+  }
+
 }
