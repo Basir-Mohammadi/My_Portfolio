@@ -9,6 +9,7 @@
 
 - HTML
 - CSS
+- linters
 
 ## Live Demo (if available)
 
