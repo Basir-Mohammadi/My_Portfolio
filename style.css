@@ -37,6 +37,7 @@ nav {
 .nav-links {
   display: none;
 }
+
 .container {
   display: grid;
   margin: 0;
@@ -139,13 +140,14 @@ nav {
   color: rgba(96, 112, 255, 1);
 }
 
-
 .button,
 .resum {
   border-radius: 5px;
   margin-top: 31px;
   margin-left: 4px;
   padding: 2%;
+  border: 2px solid blue;
+  width: max-content;
 }
 
 .button,
@@ -244,12 +246,6 @@ nav {
 
 .top {
   padding-left: 20px;
-}
-
-.button,
-.resum {
-  border: 2px solid blue;
-  width: max-content;
 }
 
 .button h4,
