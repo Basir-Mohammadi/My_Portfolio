@@ -25,6 +25,19 @@ nav {
   margin-bottom: 0;
 }
 
+.logo {
+  position: absolute;
+}
+
+.nav {
+  display: block;
+  width: 40px;
+}
+
+.nav-links {
+  display: none;
+}
+
 .container {
   display: grid;
   margin: 0;
@@ -76,9 +89,8 @@ nav {
   margin-top: 100px;
   outline-style: round;
   background-color: white;
-  height: 552px;
-  width: 330;
-  padding-left: 32px;
+  height: 100%;
+  padding: 32px;
   padding-top: 30px;
   border-radius: 8px;
 }
@@ -121,8 +133,11 @@ nav {
 .lists li {
   background-color: rgba(235, 235, 255, 1);
   padding: 9px;
-  color: rgba(96, 112, 255, 1);
   border-radius: 15%;
+}
+
+.lists h6 {
+  color: rgba(96, 112, 255, 1);
 }
 
 .button,
@@ -131,6 +146,8 @@ nav {
   margin-top: 31px;
   margin-left: 4px;
   padding: 2%;
+  border: 2px solid blue;
+  width: max-content;
 }
 
 .button,
@@ -153,8 +170,16 @@ nav {
 
 .Pics {
   width: 100%;
-  font-size: 30px;
   margin-bottom: 15px;
+}
+
+.Pics img {
+  width: 100%;
+}
+
+.contentright {
+  display: flex;
+  flex-direction: column;
 }
 
 .last-details {
@@ -178,7 +203,9 @@ nav {
 }
 
 .language {
+  margin-top: 15px;
   margin-left: 35px;
+  margin-bottom: 10px;
 }
 
 .framework {
@@ -189,10 +216,7 @@ nav {
 .container-6 {
   display: flex;
   margin-top: 115px;
-  outline: auto;
   justify-content: center;
-  outline-style: round;
-  position: relative;
   border-top-left-radius: 100px;
   background-image: url("imgs/contactform.png");
   background-color: rgba(96, 112, 255, 1);
@@ -213,6 +237,37 @@ nav {
   margin-top: 20px;
   display: flex;
   list-style-type: none;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.top {
+  padding-left: 20px;
+}
+
+.button h4,
+.resum h4 {
+  color: blue;
+}
+
+.resum:hover {
+  background: rgb(21, 38, 194);
+  color: whitesmoke;
+}
+
+.button:hover {
+  background: rgb(21, 38, 194);
+  color: whitesmoke;
+}
+
+.line {
+  width: 100%;
+  margin-bottom: 45px;
+  height: 1px;
+  background: rgb(206, 203, 203);
 }
 
 .forms {
@@ -287,6 +342,10 @@ input[type=text],
   * {
     margin: 0;
     padding: 0;
+  }
+
+  .nav {
+    display: none;
   }
 
   .container {
@@ -444,6 +503,7 @@ input[type=text],
     display: flex;
     flex-direction: column;
     width: 50%;
+    margin-left: 50px;
   }
 
   .container-6 {
