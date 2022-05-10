@@ -69,16 +69,31 @@ nav {
 }
 
 .connect {
-  padding-left: 55px;
   padding-bottom: 15px;
+}
+
+.connect1,
+.connect2 {
+  color: rgba(127, 140, 255, 1);
 }
 
 .social-image ul {
   display: flex;
   gap: 5%;
-  padding-left: 55px;
   list-style: none;
   flex-direction: row;
+}
+
+.languages ul {
+  background-color: rgb(229, 235, 235);
+  padding-left: 8px;
+  margin-right: 40px;
+  border-radius: 15px;
+}
+
+.container > .social-image ul,
+.connect1 {
+  padding-left: 42px;
 }
 
 .container-1,
@@ -125,7 +140,8 @@ nav {
 .lists {
   display: flex;
   gap: 7%;
-  padding-left: 20px;
+  margin-top: 5px;
+  padding-left: 7px;
   list-style: none;
   flex-direction: row;
 }
@@ -144,7 +160,7 @@ nav {
 .resum {
   border-radius: 5px;
   margin-top: 31px;
-  margin-left: 4px;
+  margin-left: 8px;
   padding: 2%;
   border: 2px solid blue;
   width: max-content;
@@ -153,15 +169,6 @@ nav {
 .button,
 .language {
   margin-right: 65%;
-}
-
-.resum {
-  margin-right: 59%;
-}
-
-.container-5 > .connect {
-  margin-top: 20px;
-  margin-left: 2px;
 }
 
 .container-5 {
@@ -190,21 +197,14 @@ nav {
   list-style-type: none;
 }
 
-.languages ul {
-  background-color: rgb(229, 235, 235);
-  padding-left: 8px;
-  margin-right: 40px;
-  border-radius: 15px;
-}
-
 .fram-skill {
   list-style-type: none;
-  margin-left: 35px;
+  margin-left: 7px;
 }
 
 .language {
   margin-top: 15px;
-  margin-left: 35px;
+  margin-left: 2px;
   margin-bottom: 10px;
 }
 
@@ -268,6 +268,12 @@ nav {
   margin-bottom: 45px;
   height: 1px;
   background: rgb(206, 203, 203);
+}
+
+.contact-img h1,
+.text-img {
+  font-weight: 200;
+  color: white;
 }
 
 .forms {
@@ -365,20 +371,17 @@ input[type=text],
     padding: auto;
   }
 
+  .container > .social-image ul {
+    gap: 30%;
+    margin-right: 950px;
+  }
+
   .connect {
     width: 80%;
   }
 
   .connect1 {
     color: rgba(127, 140, 255, 1);
-  }
-
-  .connect2 {
-    margin-left: -50px;
-  }
-
-  .social-image {
-    width: 85%;
   }
 
   .nav-bar {
@@ -491,6 +494,11 @@ input[type=text],
 
   .language {
     width: max-content;
+  }
+
+  .fram-skill,
+  .language {
+    margin-left: 28px;
   }
 
   .lang-s {
