@@ -77,16 +77,23 @@ nav {
   color: rgba(127, 140, 255, 1);
 }
 
-.container > .social-image ul,
-.connect1 {
-  padding-left: 42px;
-}
-
 .social-image ul {
   display: flex;
   gap: 5%;
   list-style: none;
   flex-direction: row;
+}
+
+.languages ul {
+  background-color: rgb(229, 235, 235);
+  padding-left: 8px;
+  margin-right: 40px;
+  border-radius: 15px;
+}
+
+.container > .social-image ul,
+.connect1 {
+  padding-left: 42px;
 }
 
 .container-1,
@@ -164,7 +171,6 @@ nav {
   margin-right: 65%;
 }
 
-
 .container-5 {
   height: 790px;
 }
@@ -189,13 +195,6 @@ nav {
 
 .languages {
   list-style-type: none;
-}
-
-.languages ul {
-  background-color: rgb(229, 235, 235);
-  padding-left: 8px;
-  margin-right: 40px;
-  border-radius: 15px;
 }
 
 .fram-skill {
