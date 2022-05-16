@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
     <title>My Portfolio</title>
 </head>
@@ -14,16 +15,32 @@
     <header>
         <nav class="nav-bar">
         <a href="#"><h1 class="logo"> My Logo</h1></a>
-            
-            <ul class="nav-links">
+            <ul class="nav-links" id="mobile-nav">
                 <li> <a href="#">Portfolio</a></li>
                 <li> <a href="#">About</a></li>
                 <li class="contact"> <a href="#">Contact</a></li>
             </ul>
-
-            <img class="nav" src="imgs/Union.png" alt="navbar">
+           
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div> 
         </nav>
     </header>
+    <div class="menu-popup">
+      <ul class="mobile-menu">
+          <li>
+              <a href="#" class="nav-link">Portifolio</a>
+          </li>
+          <li>
+              <a href="#about" class="nav-link">About</a>
+          </li>
+          <li>
+              <a href="#contact" class="nav-link">Contact</a>
+          </li>
+      </ul>
+  </div>
 
     <main>
         <section class="container">
@@ -485,7 +502,7 @@
     </main>
   
   
-    
+    <script src="js/navbar.js"></script>
 </body>
   
 </html>
