@@ -10,11 +10,12 @@ navLinks.classList.toggle('active');
 logo.classList.toggle('active');
 });
 
-document.querySelector('.nav-link')
+document.querySelector('.nav-links')
 .forEach(n=>n.addEventListener('click', ()=>{
 hamburger.classList.remove('active');
 navLinks.classList.remove('active');
 logo.classList.remove('active');
+menu.classList.remove('active');
 // logo.style.display="none";
 // logo.style.display="none";
 }));

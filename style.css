@@ -20,7 +20,6 @@ ul {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 0;
 }
 
@@ -35,6 +34,10 @@ nav {
 .nav {
   display: block;
   width: 40px;
+}
+
+.nav-bar {
+  margin: 15px 15px;
 }
 
 .nav-links {
@@ -415,7 +418,7 @@ input[type=text],
   }
 
   /* hamburger */
-  .overlay {
+  .menu-popup.active {
     display: none;
   }
 
@@ -443,10 +446,6 @@ input[type=text],
   .container > .social-image ul {
     gap: 30%;
     margin-right: 950px;
-  }
-
-  .mobile-menu {
-    display: none;
   }
 
   .connect {
