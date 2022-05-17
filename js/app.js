@@ -1,5 +1,3 @@
-
-=======
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu-popup');
 const navLinks = document.querySelector('.nav-links');
@@ -20,4 +18,3 @@ logo.classList.remove('active');
 // logo.style.display="none";
 // logo.style.display="none";
 }));
-

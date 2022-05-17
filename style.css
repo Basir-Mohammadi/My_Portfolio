@@ -45,6 +45,12 @@ nav {
   display: block;
 }
 
+.lists li {
+  background-color: rgba(235, 235, 255, 1);
+  padding: 9px;
+  border-radius: 15%;
+}
+
 .nav-links.active li {
   margin: 10px 12px;
 }
@@ -87,25 +93,12 @@ nav {
   background: whitesmoke;
 }
 
-.menu-popup {
-  /* display: block;
-  background: rgba(96, 112, 255, 1);
-  color: whitesmoke;
-  height: 70vh;
-   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px; */
- 
-}
-
 .menu-popup.active {
   display: block;
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   left: 0;
   top: 0;
   background: rgba(96, 112, 255, 1);
@@ -114,26 +107,6 @@ nav {
   transition: 0.5s;
   color: white;
 }
-
-/* .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.mobile-menu li {
-  margin: 10px 12px;
-}
-
-.mobile-menu li a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-} */
 
 .container {
   display: grid;
@@ -241,12 +214,6 @@ nav {
   padding-left: 7px;
   list-style: none;
   flex-direction: row;
-}
-
-.lists li {
-  background-color: rgba(235, 235, 255, 1);
-  padding: 9px;
-  border-radius: 15%;
 }
 
 .lists h6 {
@@ -437,41 +404,6 @@ input[type=text],
   background-color: green;
 }
 
-/* Mobile menu  */
-
-.intro {
-  position: relative;
-}
-
-.mobile-menu {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(96, 112, 255, 0.9);
-  padding-bottom: 20px;
-}
-
-.mobile-menu img {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  right: 20px;
-}
-
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  align-items: center;
-}
-
-.menu-items a {
-  color: white;
-  font-size: 25px;
-  margin: 25px auto;
-}
-
 @media only screen and (min-width: 850px) {
   html {
     font-family: 'Roboto', sans-serif;
@@ -480,10 +412,6 @@ input[type=text],
   * {
     margin: 0;
     padding: 0;
-  }
-
-  .nav {
-    display: none;
   }
 
   /* hamburger */
@@ -495,13 +423,6 @@ input[type=text],
     display: none;
   }
 
-  .menu-popup {
-    display: none;
-    background: rgba(96, 112, 255, 1);
-    color: whitesmoke;
-    height: 70vh;
-  }
-  
   .container {
     display: flex;
     justify-content: center;
@@ -540,7 +461,7 @@ input[type=text],
     margin: 0;
     padding-top: 20px;
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: space-between;
   }
 
