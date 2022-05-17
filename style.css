@@ -448,10 +448,11 @@ input[type=text],
     padding: 0;
   }
 
-  .nav {
+  /* hamburger */
+  .overlay {
     display: none;
   }
-
+  
   /* hamburger */
   .overlay {
     display: none;
