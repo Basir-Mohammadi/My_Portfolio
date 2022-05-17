@@ -29,6 +29,10 @@ nav {
   position: absolute;
 }
 
+.logo.active {
+  display: none;
+}
+
 .nav {
   display: block;
   width: 40px;
@@ -37,6 +41,100 @@ nav {
 .nav-links {
   display: none;
 }
+
+.nav-links.active {
+  display: block;
+}
+
+.nav-links.active li {
+  margin: 10px 12px;
+}
+
+.nav-links.active li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  font-size: 32px;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: block;
+}
+
+.bar {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  color: #fff;
+  background: rgba(96, 112, 255, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background: whitesmoke;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background: whitesmoke;
+}
+
+.menu-popup {
+  /* display: block;
+  background: rgba(96, 112, 255, 1);
+  color: whitesmoke;
+  height: 70vh;
+   position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; */
+ 
+}
+
+.menu-popup.active {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background: rgba(96, 112, 255, 1);
+  background: rgba(96, 112, 255, 0.9);
+  overflow: hidden; /* Disable horizontal scroll */
+  transition: 0.5s;
+  color: white;
+}
+
+/* .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.mobile-menu li {
+  margin: 10px 12px;
+}
+
+.mobile-menu li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+} */
 
 .container {
   display: grid;
@@ -354,6 +452,22 @@ input[type=text],
     display: none;
   }
 
+  /* hamburger */
+  .overlay {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-popup {
+    display: none;
+    background: rgba(96, 112, 255, 1);
+    color: whitesmoke;
+    height: 70vh;
+  }
+  
   .container {
     display: flex;
     justify-content: center;
@@ -388,6 +502,8 @@ input[type=text],
     margin: 0 0;
     padding-top: 20px;
     background-color: white;
+    display:flex;
+    justify-content: space-between;
   }
 
   .nav-links {
