@@ -18,11 +18,11 @@ menuItems.forEach((item) => {
 
 
 
-const body=document.querySelector('.see-project');
-open.addEventListener('click', () => {
+const seemore=document.querySelector('.see-project');
+seemore.addEventListener('click', () => {
     const mainBody=document.createElement('section');
     const popup=document.createElement('section');
-    popup.innerHTML= '
+    seemore.innerHTML= '
         <div class="Pics" id="prof">
             <img src="imgs/Facebook360.png" alt="Pics">
         </div>
