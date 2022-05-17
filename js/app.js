@@ -1,17 +1,23 @@
-const openMenu = document.querySelector('.nav .close-menu');
-const closeMenu = document.querySelector('.mobile-menu .close-menu');
-const menuItems = document.querySelectorAll('.mobile-menu a');
 
-openMenu.addEventListener('click', () => {
-  document.querySelector('.mobile-menu').classList.add('show');
+=======
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu-popup');
+const navLinks = document.querySelector('.nav-links');
+const logo = document.querySelector('.logo');
+
+hamburger.addEventListener('click', ()=>{
+hamburger.classList.toggle('active');
+menu.classList.toggle('active');
+navLinks.classList.toggle('active');
+logo.classList.toggle('active');
 });
 
-closeMenu.addEventListener('click', () => {
-  document.querySelector('.mobile-menu').classList.remove('show');
-});
+document.querySelector('.nav-link')
+.forEach(n=>n.addEventListener('click', ()=>{
+hamburger.classList.remove('active');
+navLinks.classList.remove('active');
+logo.classList.remove('active');
+// logo.style.display="none";
+// logo.style.display="none";
+}));
 
-menuItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    document.querySelector('.mobile-menu').classList.remove('show');
-  });
-});
