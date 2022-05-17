@@ -352,9 +352,10 @@ input[type=text],
   height: 100%;
   background-color:rgba(96, 112, 255, 0.9);
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
-.mobile-menu img {
+.mobile-menu .close-menu {
   width: 20px;
   height: 20px;
   position: absolute;
