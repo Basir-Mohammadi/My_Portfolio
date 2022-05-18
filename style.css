@@ -392,6 +392,7 @@ input[type=text],
 .touchbtn {
   background-color: white;
   border: none;
+  overflow: hidden;
   color: rgba(96, 112, 255, 1);
   padding: 12px 28px;
   text-align: center;
@@ -403,8 +404,16 @@ input[type=text],
   cursor: pointer;
 }
 
-.touchbtn:hover {
-  background-color: green;
+.text1.success input {
+  border-color: green;
+}
+
+.text1.error input {
+  border-color: red;
+}
+
+.touchbtn.active:hover {
+  background-color: rgb(5, 43, 2);
 }
 
 @media only screen and (min-width: 850px) {
