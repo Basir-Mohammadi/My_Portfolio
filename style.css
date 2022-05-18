@@ -56,6 +56,8 @@ nav {
 
 .nav-links.active li {
   margin: 10px 12px;
+  margin-left: -80%;
+  margin-top: 40px;
 }
 
 .nav-links.active li a {
@@ -104,6 +106,7 @@ nav {
   z-index: 1;
   left: 0;
   top: 0;
+  backdrop-filter: blur(5px);
   background: rgba(96, 112, 255, 1);
   background: rgba(96, 112, 255, 0.9);
   overflow: hidden; /* Disable horizontal scroll */
@@ -413,7 +416,8 @@ input[type="text"],
   border-color: green;
 }
 
-.error {
+.text1.error input {
+  border-color: red;
   background: #f8d7da;
   color: #721c24;
   padding: 10px 5px;
@@ -506,11 +510,6 @@ input[type="text"],
   .nav-links li:hover {
     background-color: rgb(52, 201, 168);
     border-radius: 20px;
-  }
-
-  .contact {
-    border-radius: 30px;
-    background-color: rgb(147, 185, 147);
   }
 
   .logo {
