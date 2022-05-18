@@ -10,8 +10,8 @@ hamburger.addEventListener('click', () => {
   logo.classList.toggle('active');
 });
 
-document.querySelector('.nav-links')
-  .forEach(navLinks, () => navLinks.addEventListener('click', () => {
+document.querySelectorAll('.menu')
+  .forEach((navLinks) => navLinks.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navLinks.classList.remove('active');
     logo.classList.remove('active');
