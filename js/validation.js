@@ -3,7 +3,6 @@ const email = document.getElementById('email');
 
 const validation = (event) => {
   const emailError = document.querySelector('.error');
-
   if (email.validity.patternMismatch) {
     email.setCustomValidity('');
     emailError.textContent = 'Enter email in lowercase';
