@@ -55,14 +55,17 @@ nav {
 }
 
 .nav-links.active li {
-  margin: 10px 12px;
+  margin-top: 70px;
+  padding: 8px 0;
+  margin-left: -95%;
 }
 
 .nav-links.active li a {
   color: whitesmoke;
   text-decoration: none;
+  float: left;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 100;
   line-height: 44px;
   font-size: 32px;
 }
@@ -78,7 +81,7 @@ nav {
   height: 3px;
   margin: 5px auto;
   color: #fff;
-  background: rgba(96, 112, 255, 1);
+  background: rgba(72, 87, 224, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
@@ -104,9 +107,11 @@ nav {
   z-index: 1;
   left: 0;
   top: 0;
+  filter: blur(-15px);
+  -webkit-filter: blur(-18px);
   background: rgba(96, 112, 255, 1);
-  background: rgba(96, 112, 255, 0.9);
-  overflow: hidden; /* Disable horizontal scroll */
+  background: rgba(84, 99, 231, 0.9);
+  overflow: hidden; 
   transition: 0.5s;
   color: white;
 }
@@ -482,11 +487,6 @@ input[type=text],
   .nav-links li:hover {
     background-color: rgb(52, 201, 168);
     border-radius: 20px;
-  }
-
-  .contact {
-    border-radius: 30px;
-    background-color: rgb(147, 185, 147);
   }
 
   .logo {
