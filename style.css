@@ -1,5 +1,5 @@
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgb(248, 247, 246);
 }
 
@@ -55,17 +55,16 @@ nav {
 }
 
 .nav-links.active li {
-  margin-top: 70px;
-  padding: 8px 0;
-  margin-left: -95%;
+  margin: 10px 12px;
+  margin-left: -80%;
+  margin-top: 40px;
 }
 
 .nav-links.active li a {
   color: whitesmoke;
   text-decoration: none;
-  float: left;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 600;
   line-height: 44px;
   font-size: 32px;
 }
@@ -81,7 +80,7 @@ nav {
   height: 3px;
   margin: 5px auto;
   color: #fff;
-  background: rgba(72, 87, 224, 0.3);
+  background: rgba(96, 112, 255, 1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -109,8 +108,8 @@ nav {
   top: 0;
   backdrop-filter: blur(5px);
   background: rgba(96, 112, 255, 1);
-  background: rgba(84, 99, 231, 0.9);
-  overflow: hidden;
+  background: rgba(96, 112, 255, 0.9);
+  overflow: hidden; /* Disable horizontal scroll */
   transition: 0.5s;
   color: white;
 }
@@ -118,7 +117,7 @@ nav {
 .container {
   display: grid;
   margin: 0;
-  background-image: url('imgs/header-shapes-mobile.png');
+  background-image: url("imgs/header-shapes-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -355,7 +354,7 @@ nav {
   margin: 20px;
 }
 
-input[type=text],
+input[type="text"],
 .email {
   padding: 12px 165px;
   display: inline-block;
@@ -396,6 +395,7 @@ input[type=text],
 .touchbtn {
   background-color: white;
   border: none;
+  overflow: hidden;
   color: rgba(96, 112, 255, 1);
   padding: 12px 28px;
   text-align: center;
@@ -407,13 +407,21 @@ input[type=text],
   cursor: pointer;
 }
 
-.touchbtn:hover {
-  background-color: green;
+.text1.success input {
+  border-color: green;
+}
+
+.text1.error input {
+  border-color: red;
+}
+
+.touchbtn.active:hover {
+  background-color: rgb(5, 43, 2);
 }
 
 @media only screen and (min-width: 850px) {
   html {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
   }
 
   * {
