@@ -111,7 +111,7 @@ nav {
   -webkit-filter: blur(-18px);
   background: rgba(96, 112, 255, 1);
   background: rgba(84, 99, 231, 0.9);
-  overflow: hidden; 
+  overflow: hidden;
   transition: 0.5s;
   color: white;
 }
