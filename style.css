@@ -420,7 +420,6 @@ input[type="text"],
 
 .text1.error input {
   border-color: red;
-.error {
   background: #f8d7da;
   color: #721c24;
   padding: 10px 5px;
