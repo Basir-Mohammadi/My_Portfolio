@@ -405,12 +405,12 @@ input[type="text"],
   cursor: pointer;
 }
 
-.text1.success input {
-  border-color: green;
-}
-
 .text1 input {
   border-color: red;
+}
+
+.text1.success input {
+  border-color: green;
 }
 
 .error {
