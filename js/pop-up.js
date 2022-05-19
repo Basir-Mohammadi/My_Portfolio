@@ -92,7 +92,7 @@ projects.forEach((obj) => {
   <div>
     <ul class="dates">
     <li class="canopy">
-    <h5>${obj.roles.company}</h5>
+    <h4>${obj.roles.company}</h4>
   </li>
   <li class="dot1">
     <a href="#">
@@ -100,7 +100,15 @@ projects.forEach((obj) => {
     </a>
   </li>
   <li class="backEnd">
-    <h5>${obj.roles.position}</h5>
+    ${obj.roles.position[0]}
+    </li>
+    <li class="dot1">
+    <a href="#">
+      <img src="imgs/Dot.png" alt="dot1" />
+    </a>
+  </li>
+  <li class="backEnd">
+    ${obj.roles.position[1]}
   </li>
       </li>
     </ul>
@@ -114,7 +122,17 @@ projects.forEach((obj) => {
     <ul class="lists">
       <li>
         <a href="#">
-        <h6>${obj.skills}</h6>
+        <h6>${obj.skills[0]}</h6>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        <h6>${obj.skills[1]}</h6>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        <h6>${obj.skills[2]}</h6>
         </a>
       </li>
     </ul>
@@ -132,61 +150,61 @@ projects.forEach((obj) => {
 });
 section.innerHTML = data;
 
-const open = document.querySelector('.seeproject');
+// const open = document.createElement('.seeproject');
 
-open.addEventListener('click', () => {
-  let data = '';
-  const section = document.querySelector('.projects');
-  projects.forEach((obj) => {
-    data += `<section class="container-1" id="About">
-  <div class="Pics" id="prof">
-  <img src="${obj.image}" alt="Pics" />
-</div>
-<div class="contentright">
-  <div class="tonic">
-    <h1>${obj.title}</h1>
-  </div>
-  <div>
-    <ul class="dates">
-    <li class="canopy">
-    <h5>${obj.roles.company}</h5>
-  </li>
-  <li class="dot1">
-    <a href="#">
-      <img src="imgs/Dot.png" alt="dot1" />
-    </a>
-  </li>
-  <li class="backEnd">
-    <h5>${obj.roles.position}</h5>
-  </li>
-      </li>
-    </ul>
-  </div>
-  <div class="content-details">
-    <p>
-     ${obj.description}
-    </p>
-  </div>
-  <div class="prog-lists">
-    <ul class="lists">
-      <li>
-        <a href="#">
-        <h6>${obj.skills}</h6>
-        </a>
-      </li>
-    </ul>
-  </div>
+// open.addEventListener('click', () => {
+//   let data = '';
+//   const section = document.querySelector('.projects');
+//   projects.forEach((obj) => {
+//     data += `<section class="container-1" id="About">
+//   <div class="Pics" id="prof">
+//   <img src="${obj.image}" alt="Pics" />
+// </div>
+// <div class="contentright">
+//   <div class="tonic">
+//     <h1>${obj.title}</h1>
+//   </div>
+//   <div>
+//     <ul class="dates">
+//     <li class="canopy">
+//     <h5>${obj.roles.company}</h5>
+//   </li>
+//   <li class="dot1">
+//     <a href="#">
+//       <img src="imgs/Dot.png" alt="dot1" />
+//     </a>
+//   </li>
+//   <li class="backEnd">
+//     <h5>${obj.roles.position}</h5>
+//   </li>
+//       </li>
+//     </ul>
+//   </div>
+//   <div class="content-details">
+//     <p>
+//      ${obj.description}
+//     </p>
+//   </div>
+//   <div class="prog-lists">
+//     <ul class="lists">
+//       <li>
+//         <a href="#">
+//         <h6>${obj.skills}</h6>
+//         </a>
+//       </li>
+//     </ul>
+//   </div>
 
-  <div class="button seeproject">
-    <a href="#">
-      <h4>${obj.seeproject}</h4>
-    </a>
-  </div>
-</div>
-</section>
+//   <div class="button seeproject">
+//     <a href="#">
+//       <h4>${obj.seeproject}</h4>
+//     </a>
+//   </div>
+// </div>
+// </section>
 
-`;
-  });
+// `;
+//   });
 
-  section.innerHTML = data;
-});
+//   section.innerHTML = data;
+// });
