@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Tonic',
     roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
-    image: 'imgs/availPortfolio.png',
+    image: './imgs/availPortfolio.png',
     alt: 'Canopy project screenshot',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
@@ -77,69 +77,69 @@ const projects = [
   },
 ];
 
-let data = '';
+let container = '';
 const section = document.querySelector('.projects');
 
 projects.forEach((obj) => {
-  data += `<section class="container-1" id="About">
-  <div class="Pics" id="prof">
-  <img src="${obj.image}" alt="Pics" />
+  container += `<section class='container-1' id='About'>
+  <div class='Pics' id='prof'>
+  <img src='${obj.image}' alt='Pics' />
 </div>
-<div class="contentright">
-  <div class="tonic">
+<div class='contentright'>
+  <div class='tonic'>
     <h1>${obj.title}</h1>
   </div>
   <div>
-    <ul class="dates">
-    <li class="canopy">
+    <ul class='dates'>
+    <li class='canopy'>
     <h4>${obj.roles.company}</h4>
   </li>
-  <li class="dot1">
-    <a href="#">
-      <img src="imgs/Dot.png" alt="dot1" />
+  <li class='dot1'>
+    <a href='#'>
+      <img src="imgs/Dot.png" alt='dot1' />
     </a>
   </li>
-  <li class="backEnd">
+  <li class='backEnd'>
     ${obj.roles.position[0]}
     </li>
-    <li class="dot1">
-    <a href="#">
-      <img src="imgs/Dot.png" alt="dot1" />
+    <li class='dot1'>
+    <a href='#'>
+      <img src='imgs/Dot.png' alt='dot1' />
     </a>
   </li>
-  <li class="backEnd">
+  <li class='backEnd'>
     ${obj.roles.position[1]}
   </li>
       </li>
     </ul>
   </div>
-  <div class="content-details">
+  <div class='content-details'>
     <p>
      ${obj.description}
     </p>
   </div>
-  <div class="prog-lists">
-    <ul class="lists">
+  <div class='prog-lists'>
+    <ul class='lists'>
       <li>
-        <a href="#">
+        <a href='#'>
         <h6>${obj.skills[0]}</h6>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href='#'>
         <h6>${obj.skills[1]}</h6>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href='#'>
         <h6>${obj.skills[2]}</h6>
         </a>
       </li>
     </ul>
   </div>
 
-  <div class="button seeproject">
-    <a href="#">
+  <div data-modal-target ='#modal' class='button seeproject'>
+    <a href='#'>
       <h4>${obj.seeproject}</h4>
     </a>
   </div>
@@ -148,63 +148,65 @@ projects.forEach((obj) => {
 
 `;
 });
-section.innerHTML = data;
+section.innerHTML = container;
 
-// const open = document.createElement('.seeproject');
+const openModalButtons = document.querySelector('.seeproject');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
-// open.addEventListener('click', () => {
-//   let data = '';
-//   const section = document.querySelector('.projects');
-//   projects.forEach((obj) => {
-//     data += `<section class="container-1" id="About">
-//   <div class="Pics" id="prof">
-//   <img src="${obj.image}" alt="Pics" />
-// </div>
-// <div class="contentright">
-//   <div class="tonic">
-//     <h1>${obj.title}</h1>
-//   </div>
-//   <div>
-//     <ul class="dates">
-//     <li class="canopy">
-//     <h5>${obj.roles.company}</h5>
-//   </li>
-//   <li class="dot1">
-//     <a href="#">
-//       <img src="imgs/Dot.png" alt="dot1" />
-//     </a>
-//   </li>
-//   <li class="backEnd">
-//     <h5>${obj.roles.position}</h5>
-//   </li>
-//       </li>
-//     </ul>
-//   </div>
-//   <div class="content-details">
-//     <p>
-//      ${obj.description}
-//     </p>
-//   </div>
-//   <div class="prog-lists">
-//     <ul class="lists">
-//       <li>
-//         <a href="#">
-//         <h6>${obj.skills}</h6>
-//         </a>
-//       </li>
-//     </ul>
-//   </div>
+openModalButtons.forEach(button () => {
+  button.addEventListener('click', () => {
+    const modal =document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  })
+})
 
-//   <div class="button seeproject">
-//     <a href="#">
-//       <h4>${obj.seeproject}</h4>
-//     </a>
-//   </div>
-// </div>
-// </section>
+closeModalButtons.forEach(button () => {
+  button.addEventListener('click', () => {
+    const modal =button.closest('.modal');
+    closeModal(modal);
+  })
+})
 
-// `;
-//   });
+function openModal(modal){
+  if (modal == null) return 
+  modal.classlist.add('active');
+  overlay.classlist.add('active');
+}
 
-//   section.innerHTML = data;
-// });
+function closeModal(modal){
+  if (modal == null) return 
+  modal.classlist.remove('active');
+  overlay.classlist.remove('active');
+}
+
+
+
+
+// document.querySelector('.projects').innerHTML = container;
+
+// const projectModals = document.querySelector('.project-popup');
+// document.querySelectorAll('.seeproject').forEach((button) => {
+//   button.addEventListener('click', (e) => {
+//     e.defaultPrevented();
+//     projectModals.style.display = 'flex';
+//     for (let popwindow of projects){
+
+//         let view = popwindow.skillsModal;
+//         document.querySelector('.image-pops').src =popwindow.image;
+//         document.querySelector('.title h2').innerHTML =popwindow.title;
+//         document.querySelector('.text p').innerHTML =popwindow.text;
+//         document.querySelector('.see-progress').href =popwindow.versionURL;
+//         document.querySelector('.see-live').href =popwindow.sourceURL;
+//         const ul=document.querySelector('.skills-popup');
+//         let li = document.createElement('li');
+//         for ( view of popwindow.skillsModal){
+//             li.innerHTML=popwindow;
+//             ul.appendChild(li);
+//         }
+//         console.log(ul);
+//         document.querySelector('.text p').innerHTML=popwindow.text;
+//         }
+//     }),
+//  });
+
