@@ -113,13 +113,13 @@ const modalFooter = (project) => {
   const seeSourceButton = createImageButton(
     project,
     project.livelink,
-    'Icon.svg'
+    'Icon.svg',
   );
   modalButtons.appendChild(seeSourceButton);
   const seeLiveButton = createImageButton(
     project,
     project.seesource,
-    'sourcecode.svg'
+    'sourcecode.svg',
   );
   modalButtons.appendChild(seeLiveButton);
 
