@@ -1,11 +1,12 @@
 html {
-  font-family: "Roboto", sans-serif;
-  background-color: rgb(248, 247, 246);
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -435,6 +436,212 @@ input[type="text"],
   background-color: rgb(5, 43, 2);
 }
 
+.fixed {
+  overflow: hidden;
+}
+
+.grid-item ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.grid-item .project-role li {
+  color: #474e59;
+  margin-left: 35px;
+  font-weight: 600;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 88px 0 0;
+}
+
+.grid-item.card {
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.grid-item .project-role li::before {
+  content: " ";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 8px;
+  background-color: #c1c7d0;
+}
+
+.grid-item .card-image img {
+  width: 100%;
+}
+
+.grid-item h2 {
+  margin: 12px 0;
+  font-size: 32px;
+}
+
+.grid-item .tags {
+  display: flex;
+  margin-top: 16px;
+}
+
+.grid-item .tags li {
+  color: #3b4eff;
+  font: 500 12px;
+  padding: 4px 12px 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 8px 5px 20px 0;
+}
+
+.hide-ruby.grid-item .tags li:nth-child(2) {
+  display: none;
+}
+
+.grid-item .card-description p {
+  margin: 20px 0;
+}
+
+.btn {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  color: #3268f1;
+  padding: 12px 16px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 0 0 20px;
+  background-color: #fff;
+  border: 1px solid #3268f1;
+  transition: all 0.5s;
+}
+
+.btn-up {
+  margin-top: 22px;
+  font-weight: 700;
+}
+
+.btn span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.grid-item .project-role-wrapper span {
+  font-weight: bold;
+}
+
+.btn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: -11px;
+  font-size: xx-large;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn:focus {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+.btn.disabled {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+}
+
+.Modal .tags-wrapper ul {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.Modal .btn {
+  width: 140px;
+  font-size: 14px;
+}
+
+.Modal .btn img {
+  margin: 0 0 0 3px;
+}
+
+.grid-item .card-image img:hover {
+  cursor: pointer;
+}
+
+.Modal {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(193, 199, 208, 0.75);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+}
+
+.Modal .grid-item {
+  margin: 10px 0;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.Modal .grid-item .btn,
+.Modal .card-image {
+  margin-top: 20px;
+}
+
+.Modal .grid-item .card-description p {
+  line-height: 26px;
+}
+
+.Modal .Modal-close {
+  width: 20px;
+  position: absolute;
+  right: 40px;
+  top: 10%;
+  cursor: pointer;
+}
+
+.Modal .show {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.Modal .grid-item h2 {
+  font-size: 25px;
+  margin: 6px 0 12px 0;
+}
+
 @media only screen and (min-width: 850px) {
   html {
     font-family: "Roboto", sans-serif;
@@ -443,6 +650,7 @@ input[type="text"],
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   /* hamburger */
@@ -668,5 +876,83 @@ input[type="text"],
     margin-bottom: 45px;
     height: 1px;
     background: rgb(206, 203, 203);
+  }
+
+  body {
+    background-color: #e5e5e5;
+  }
+
+  .Modal .show {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Modal .card {
+    width: 90%;
+  }
+
+  .Modal .card-image {
+    margin: 36px 0;
+    padding: 290px;
+  }
+
+  .Modal .tags-wrapper {
+    min-width: 30%;
+  }
+
+  .Modal .grid-item {
+    margin: 10px 24px;
+  }
+
+  .Modal .Modal-close {
+    right: 120px;
+    top: 45px;
+  }
+
+  .project-cards .grid-item .project-role li {
+    font-weight: normal;
+  }
+
+  .Modal .tags-wrapper ul {
+    flex-wrap: wrap;
+  }
+
+  .hide-on-mobile {
+    display: list-item;
+  }
+
+  .Modal .card-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Modal .card-description {
+    justify-content: space-between;
+  }
+
+  .project-cards {
+    margin: 0 0 114px 0;
+    background-color: #e5e5e5;
+  }
+
+  .project-cards .grid-item {
+    flex-direction: row;
+    gap: 46px;
+    width: 80%;
+    margin: 114px auto 0 auto;
+  }
+
+  .project-cards .grid-item.card div {
+    width: 50%;
+  }
+
+  .project-cards .grid-item.card .project-role-wrapper,
+  .project-cards .grid-item.card .tags-wrapper {
+    width: 100%;
+  }
+
+  .Modal .grid-item .card-description p {
+    margin: 0 36px 0 0;
   }
 }
