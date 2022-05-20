@@ -2,9 +2,10 @@ const projects = [
   {
     title: 'Tonic',
     roles: { company: 'Canopy', position: ['Back End Dev', '2015'] },
-    image: './imgs/availPortfolio.png',
+    image: 'snapshootportfolio.svg',
     alt: 'Canopy project screenshot',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     livelink: { link: '#', text: 'See live' },
@@ -20,10 +21,11 @@ const projects = [
   {
     title: 'Multi-Post Stories',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: './imgs/Facebook360.png',
+    image: 'project-4.svg',
     alt: 'Multi-Post stories project screenshot',
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    skills: ['html', 'css', 'javascript'],
+    description:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     livelink: { link: '#', text: 'See live' },
     seesource: { link: '#', text: 'See Source' },
@@ -38,10 +40,11 @@ const projects = [
   {
     title: 'Facebook 360',
     roles: { company: 'Facebook', position: ['Full Stack Dev', '2015'] },
-    image: './imgs/prof-port.png',
+    image: 'tonic.svg',
     alt: 'Facebook 360 project screenshot',
-    description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    skills: ['html', 'css', 'javascript'],
+    description:
+      'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     livelink: { link: '#', text: 'See live' },
     seesource: { link: '#', text: 'See Source' },
@@ -52,13 +55,15 @@ const projects = [
       cardDescription: ['card-description'],
     },
   },
+
   {
     title: 'Uber Navigation',
-    roles: { company: 'Uber', position: ['Back End Dev', '2018'] },
-    image: './imgs/Snapshoot-Portfolio.jpg',
+    roles: { company: 'Uber', position: ['Lead Developer', '2018'] },
+    image: 'multi-stories-post.svg',
     alt: 'Uber Navigation project screenshot',
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
-    skills: ['html', 'css', 'javascript'],
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car..',
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     skillsModal: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
     livelink: { link: '#', text: 'See live' },
     seesource: { link: '#', text: 'See Source' },
@@ -77,136 +82,198 @@ const projects = [
   },
 ];
 
-let container = '';
-const section = document.querySelector('.projects');
+const dummyText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.';
+const mobileText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
 
-projects.forEach((obj) => {
-  container += `<section class='container-1' id='About'>
-  <div class='Pics' id='prof'>
-  <img src='${obj.image}' alt='Pics' />
-</div>
-<div class='contentright'>
-  <div class='tonic'>
-    <h1>${obj.title}</h1>
-  </div>
-  <div>
-    <ul class='dates'>
-    <li class='canopy'>
-    <h4>${obj.roles.company}</h4>
-  </li>
-  <li class='dot1'>
-    <a href='#'>
-      <img src="imgs/Dot.png" alt='dot1' />
-    </a>
-  </li>
-  <li class='backEnd'>
-    ${obj.roles.position[0]}
-    </li>
-    <li class='dot1'>
-    <a href='#'>
-      <img src='imgs/Dot.png' alt='dot1' />
-    </a>
-  </li>
-  <li class='backEnd'>
-    ${obj.roles.position[1]}
-  </li>
-      </li>
-    </ul>
-  </div>
-  <div class='content-details'>
-    <p>
-     ${obj.description}
-    </p>
-  </div>
-  <div class='prog-lists'>
-    <ul class='lists'>
-      <li>
-        <a href='#'>
-        <h6>${obj.skills[0]}</h6>
-        </a>
-      </li>
-      <li>
-        <a href='#'>
-        <h6>${obj.skills[1]}</h6>
-        </a>
-      </li>
-      <li>
-        <a href='#'>
-        <h6>${obj.skills[2]}</h6>
-        </a>
-      </li>
-    </ul>
-  </div>
+const listItems = (items) => {
+  let list = '';
+  items.forEach((element) => {
+    list += `<li>${element}</li>`;
+  });
 
-  <div data-modal-target ='#modal' class='button seeproject'>
-    <a href='#'>
-      <h4>${obj.seeproject}</h4>
-    </a>
-  </div>
-</div>
-</section>
+  return list;
+};
 
-`;
+const createImageButton = (project, dest, srcLink) => {
+  const link = document.createElement('a');
+  link.className = 'btn';
+  link.textContent = `${dest.text} `;
+  link.href = dest.link;
+  const img = document.createElement('img');
+  img.src = srcLink;
+  img.alt = `${dest.text} Icon`;
+  link.appendChild(img);
+
+  return link;
+};
+
+const modalFooter = (project) => {
+  const modalButtons = document.createElement('div');
+  modalButtons.className = 'show';
+  const seeSourceButton = createImageButton(
+    project,
+    project.livelink,
+    'Icon.svg'
+  );
+  modalButtons.appendChild(seeSourceButton);
+  const seeLiveButton = createImageButton(
+    project,
+    project.seesource,
+    'sourcecode.svg'
+  );
+  modalButtons.appendChild(seeLiveButton);
+
+  return modalButtons;
+};
+
+const createRoles = (project) => {
+  const cardRoleWrapper = document.createElement('div');
+  cardRoleWrapper.className = 'project-role-wrapper';
+
+  const cardRoleCompany = document.createElement('span');
+  cardRoleCompany.textContent = project.roles.company;
+
+  cardRoleWrapper.appendChild(cardRoleCompany);
+
+  const cardRolePosition = document.createElement('ul');
+  cardRolePosition.className = 'project-role';
+  cardRolePosition.innerHTML = listItems(project.roles.position);
+
+  cardRoleWrapper.appendChild(cardRolePosition);
+
+  return cardRoleWrapper;
+};
+
+const createHeader = (project, titleElement) => {
+  const cardHeader = document.createElement(titleElement);
+  cardHeader.textContent = project.title;
+
+  return cardHeader;
+};
+
+const createProjectCard = (project, position = null, isDesktop = true) => {
+  const articleHolder = document.createElement('article');
+  articleHolder.className = project.htmlClass.article.join(' ');
+  const cardHeader = createHeader(project, 'h2');
+  const cardRoleWrapper = createRoles(project);
+
+  if (!isDesktop) {
+    articleHolder.appendChild(cardHeader);
+    articleHolder.appendChild(cardRoleWrapper);
+  }
+
+  const cardImage = document.createElement('div');
+  cardImage.className = project.htmlClass.cardImage.join(' ');
+  const Image = document.createElement('img');
+
+  if (isDesktop || document.documentElement.clientWidth <= 767) {
+    Image.src = project.image;
+    Image.alt = project.alt;
+    cardImage.appendChild(Image);
+  } else {
+    cardImage.style.height = '568px';
+    cardImage.style.backgroundImage = `url(${project.image})`;
+    cardImage.style.backgroundRepeat = 'no-repeat';
+    cardImage.style.backgroundSize = '95%';
+    cardImage.style.backgroundPositionY = '0';
+    cardImage.style.backgroundPositionX = '18px';
+
+    cardImage.classList.remove('flex-item-2');
+  }
+  articleHolder.appendChild(cardImage);
+
+  const cardDescription = document.createElement('div');
+  cardDescription.className = project.htmlClass.cardDescription.join(' ');
+
+  const cardTagWrapper = document.createElement('div');
+  cardTagWrapper.className = 'tags-wrapper';
+
+  const cardTagList = document.createElement('ul');
+  cardTagList.className = 'tags';
+
+  const cardButton = document.createElement('a');
+  cardButton.className = 'btn btn-project';
+
+  if (position) {
+    cardButton.setAttribute('data-position', position - 1);
+  }
+
+  const cardText = document.createElement('p');
+  cardText.textContent = project.description;
+
+  cardTagList.innerHTML = listItems(project.skills);
+
+  if (isDesktop) {
+    cardDescription.appendChild(cardHeader);
+    cardDescription.appendChild(cardRoleWrapper);
+    cardText.textContent = project.description;
+  } else if (document.documentElement.clientWidth <= 767) {
+    cardText.textContent = mobileText;
+  } else {
+    cardText.textContent = dummyText;
+    cardTagList.innerHTML = listItems(project.skillsModal);
+  }
+  cardTagWrapper.appendChild(cardTagList);
+  cardDescription.appendChild(cardText);
+  if (isDesktop) {
+    cardButton.innerHTML = 'See Project';
+    cardTagWrapper.appendChild(cardButton);
+  }
+  cardDescription.appendChild(cardTagWrapper);
+  articleHolder.appendChild(cardDescription);
+
+  return articleHolder;
+};
+
+const articleContainer = document.createElement('div');
+const cardContainer = document.querySelector('#port');
+
+for (let i = 0; i < projects.length; i += 1) {
+  const cardInstance = createProjectCard(projects[i], i + 1, true);
+  articleContainer.appendChild(cardInstance);
+}
+
+cardContainer.appendChild(articleContainer);
+
+const closePopup = () => {
+  const Modal = document.querySelector('.Modal');
+  Modal.style.display = 'none';
+  Modal.innerHTML = '';
+  document.querySelector('body').classList.toggle('fixed');
+};
+
+const ModalCloseButton = () => {
+  const ModalCloseBtn = document.createElement('img');
+  ModalCloseBtn.className = 'Modal-close';
+  ModalCloseBtn.src = 'Modal-close.svg';
+  ModalCloseBtn.alt = 'Close modal button';
+
+  ModalCloseBtn.addEventListener('click', closePopup);
+
+  return ModalCloseBtn;
+};
+
+function showPopupWindow() {
+  const position = parseInt(this.getAttribute('data-position'), 10);
+  const modalContent = createProjectCard(projects[position], false, false);
+
+  const Modal = document.querySelector('.Modal');
+  const ModalCloseBtn = ModalCloseButton();
+  const modalButtons = modalFooter(projects[position]);
+
+  Modal.innerHTML = '';
+
+  Modal.appendChild(modalContent);
+  const tagsWrapper = document.querySelector('.Modal .tags-wrapper');
+  tagsWrapper.appendChild(modalButtons);
+  Modal.childNodes[0].appendChild(ModalCloseBtn);
+
+  Modal.style.display = 'flex';
+  document.querySelector('body').classList.toggle('fixed');
+}
+
+const btnProjects = document.querySelectorAll('.btn-project');
+
+btnProjects.forEach((btnProject) => {
+  btnProject.addEventListener('click', showPopupWindow);
 });
-section.innerHTML = container;
-
-const openModalButtons = document.querySelector('.seeproject');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-openModalButtons.forEach(button () => {
-  button.addEventListener('click', () => {
-    const modal =document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  })
-})
-
-closeModalButtons.forEach(button () => {
-  button.addEventListener('click', () => {
-    const modal =button.closest('.modal');
-    closeModal(modal);
-  })
-})
-
-function openModal(modal){
-  if (modal == null) return 
-  modal.classlist.add('active');
-  overlay.classlist.add('active');
-}
-
-function closeModal(modal){
-  if (modal == null) return 
-  modal.classlist.remove('active');
-  overlay.classlist.remove('active');
-}
-
-
-
-
-// document.querySelector('.projects').innerHTML = container;
-
-// const projectModals = document.querySelector('.project-popup');
-// document.querySelectorAll('.seeproject').forEach((button) => {
-//   button.addEventListener('click', (e) => {
-//     e.defaultPrevented();
-//     projectModals.style.display = 'flex';
-//     for (let popwindow of projects){
-
-//         let view = popwindow.skillsModal;
-//         document.querySelector('.image-pops').src =popwindow.image;
-//         document.querySelector('.title h2').innerHTML =popwindow.title;
-//         document.querySelector('.text p').innerHTML =popwindow.text;
-//         document.querySelector('.see-progress').href =popwindow.versionURL;
-//         document.querySelector('.see-live').href =popwindow.sourceURL;
-//         const ul=document.querySelector('.skills-popup');
-//         let li = document.createElement('li');
-//         for ( view of popwindow.skillsModal){
-//             li.innerHTML=popwindow;
-//             ul.appendChild(li);
-//         }
-//         console.log(ul);
-//         document.querySelector('.text p').innerHTML=popwindow.text;
-//         }
-//     }),
-//  });
-
