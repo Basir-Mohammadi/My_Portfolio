@@ -169,6 +169,11 @@ nav {
   border-radius: 15px;
 }
 
+.grid-item ul {
+  display: flex;
+  list-style-type: none;
+}
+
 .container > .social-image ul,
 .connect1 {
   padding-left: 42px;
@@ -438,11 +443,6 @@ input[type="text"],
 
 .fixed {
   overflow: hidden;
-}
-
-.grid-item ul {
-  display: flex;
-  list-style-type: none;
 }
 
 .grid-item .project-role li {
@@ -930,9 +930,6 @@ input[type="text"],
   .Modal .card-description {
     display: flex;
     flex-direction: row;
-  }
-
-  .Modal .card-description {
     justify-content: space-between;
   }
 
