@@ -523,10 +523,6 @@ input[type="text"],
   transition: all 0.5s;
 }
 
-.btn:hover {
-  cursor: pointer;
-}
-
 .btn-up {
   margin-top: 22px;
   font-weight: 700;
@@ -558,6 +554,7 @@ input[type="text"],
 }
 
 .btn:hover {
+  cursor: pointer;
   color: #fff;
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
