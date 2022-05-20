@@ -523,6 +523,10 @@ input[type="text"],
   transition: all 0.5s;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-up {
   margin-top: 22px;
   font-weight: 700;
@@ -891,6 +895,10 @@ input[type="text"],
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+  }
+
+  .btn:hover {
+    cursor: pointer;
   }
 
   .Modal .card {
