@@ -27,4 +27,4 @@ const displayUserInfo = () => {
     userMessage.value = userInfo.message;
   }
 };
-displayUserInfo();
+// displayUserInfo();
