@@ -91,7 +91,6 @@
         </section>
       </div>
 
-   
       <div class="grid-container project-cards" id="port"></div>
 
       <section class="container-5">
@@ -222,31 +221,33 @@
             id="forms"
           >
             <input
-              type="text"
               class="text1 fname"
-              id="fname"
+              type="text"
+              name="username"
+              id="username"
+              value=""
+              placeholder="Name"
               maxlength="30"
-              name="firstname"
-              placeholder="please write your name..."
               required
             />
 
             <input
               type="email"
               class="text1 email"
-              id="email"
-              name="email"
               pattern="[a-z@.0-9_]+"
-              placeholder="write your email..."
+              name="email"
+              id="email"
+              value=""
+              placeholder="Name@gmail.com"
               required
             />
 
             <textarea
-              name="text"
               class="text1 textarea"
-              id="text"
+              name="message"
+              id="message"
               maxlength="500"
-              placeholder="Please write your text here.."
+              placeholder="Write your message here "
               required
             >
             </textarea>
@@ -263,6 +264,7 @@
     </main>
     <script src="js/app.js"></script>
     <script src="js/validation.js"></script>
+    <script src="js/local-storage.js"></script>
     <script src="js/pop-up.js"></script>
     <div class="Modal"></div>
   </body>
