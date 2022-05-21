@@ -12,16 +12,16 @@ const saveUserInfo = () => {
   formData.email = userEmail.value;
   formData.username = userName.value;
   formData.message = userMessage.value;
-  localStorageSave("data", JSON.stringify(formData));
+  localStorageSave('data', JSON.stringify(formData));
 };
 
-userEmail.addEventListener("blur", saveUserInfo);
-userName.addEventListener("blur", saveUserInfo);
-userMessage.addEventListener("blur", saveUserInfo);
+userEmail.addEventListener('blur', saveUserInfo);
+userName.addEventListener('blur', saveUserInfo);
+userMessage.addEventListener('blur', saveUserInfo);
 
 const displayUserInfo = () => {
-  if (localStorage.getItem("data")) {
-    const userInfo = JSON.parse(localStorage.getItem("data"));
+  if (localStorage.getItem('data')) {
+    const userInfo = JSON.parse(localStorage.getItem('data'));
     userName.value = userInfo.username;
     userEmail.value = userInfo.email;
     userMessage.value = userInfo.message;
